@@ -1,0 +1,104 @@
+.progress {
+  filter: drop-shadow(rgb(172, 172, 172) 3px 3px 3px);
+}
+
+.skills-image-container {
+  position: relative;
+}
+
+.rotate-hover {
+  position: absolute;
+  width: 40%;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+
+.dev-skills-container:hover .rotate-hover {
+  animation: rotate 4s infinite forwards alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.misc-image-container {
+  position: relative;
+}
+
+.move-hover {
+  position: absolute;
+  transition: transform 1.5s ease;
+  width: 40%;
+  z-index: 1;
+  bottom: 15px;
+  right: 15px;
+  transform-origin: top left;
+}
+
+.misc-skills-container:hover .move-hover {
+  animation: move 1.5s infinite forwards alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-20%) translateY(-60%) rotate(60deg);
+  }
+}
+
+.skills-image-container {
+  transition: transform 0.5s ease-in-out;
+}
+
+.skills-container:hover .skills-image-container {
+  animation: trans-skills-right 1s forwards;
+}
+
+.misc-image-container {
+  transition: transform 0.5s ease-in-out;
+}
+
+.skills-container:hover .misc-image-container {
+  animation: trans-skills-left 1s forwards;
+}
+
+.card img {
+  height: 300px;
+}
+.card {
+  box-shadow: 5px 10px 8px #888888;
+}
+
+@keyframes trans-skills-right {
+  0% {
+    filter: drop-shadow(1px 1px 4px #a7a7f5);
+  }
+
+  100% {
+    transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1) rotateX(-8deg)
+      rotateY(-10deg) rotateZ(-4deg) translateX(10px) translateY(-10px)
+      translateZ(12px);
+    filter: drop-shadow(10px 10px 4px #4444dd);
+  }
+}
+
+@keyframes trans-skills-left {
+  0% {
+    filter: drop-shadow(1px 1px 4px #a7a7f5);
+  }
+
+  100% {
+    transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1) rotateX(-8deg) rotateY(10deg)
+      rotateZ(4deg) translateX(-10px) translateY(-10px) translateZ(0px)
+      skewX(-4deg) skewY(-5deg);
+    filter: drop-shadow(10px 10px 4px #4444dd);
+  }
+}
