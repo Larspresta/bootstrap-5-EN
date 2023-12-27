@@ -2,6 +2,15 @@
   filter: drop-shadow(rgb(172, 172, 172) 3px 3px 3px);
 }
 
+.top-container {
+  height: 700px;
+}
+
+#lauri img {
+  border-radius: 50%;
+  filter: drop-shadow(1px 6px 6px #a7a7f5);
+}
+
 .skills-image-container {
   position: relative;
 }
@@ -70,11 +79,23 @@
   animation: trans-skills-left 1s forwards;
 }
 
-.card img {
+.card .card-img-top {
   height: 300px;
 }
 .card {
   box-shadow: 5px 10px 8px #888888;
+}
+
+.img-preview-toggle {
+  cursor: pointer;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+.carousel-item img {
+  height: 100vh;
 }
 
 @keyframes trans-skills-right {
@@ -83,9 +104,8 @@
   }
 
   100% {
-    transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1) rotateX(-8deg)
-      rotateY(-10deg) rotateZ(-4deg) translateX(10px) translateY(-10px)
-      translateZ(12px);
+    transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1) rotateX(-8deg) rotateY(-10deg) rotateZ(-4deg)
+      translateX(10px) translateY(-10px) translateZ(12px);
     filter: drop-shadow(10px 10px 4px #4444dd);
   }
 }
@@ -96,9 +116,8 @@
   }
 
   100% {
-    transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1) rotateX(-8deg) rotateY(10deg)
-      rotateZ(4deg) translateX(-10px) translateY(-10px) translateZ(0px)
-      skewX(-4deg) skewY(-5deg);
+    transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1) rotateX(-8deg) rotateY(10deg) rotateZ(4deg)
+      translateX(-10px) translateY(-10px) translateZ(0px) skewX(-4deg) skewY(-5deg);
     filter: drop-shadow(10px 10px 4px #4444dd);
   }
 }
