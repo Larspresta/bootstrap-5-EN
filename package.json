@@ -1,0 +1,17 @@
+{
+  "name": "bootstrap-5-en",
+  "version": "1.0.0",
+  "description": "Welcome to the GitHubt repository of the Portfolio exercise for the [OpenClassrooms course on Bootstrap 5](https://openclassrooms.com/en/courses/7655936-create-responsive-websites-efficiently-with-bootstrap-5).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
